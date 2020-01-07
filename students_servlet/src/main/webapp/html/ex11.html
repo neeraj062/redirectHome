@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src="jquery-3.4.1.js" type="text/javascript"> </script>
+
+<script type="text/javascript">
+
+
+function toggleDisplay(){
+//
+// defining the function to be executed on click event
+//
+//in javascript functions can be passed as argument 
+//
+ $("#toggler1").click(function(){
+     console.log("inside toggle");
+     //
+     //similarly play with other properties like left ,right ,top
+     //  
+     var newPosition={right: '40px'};
+     $("#msgContainer").animate(newPosition);
+}); 
+
+
+};
+
+//
+// execute our function when dom is ready ,ie. run after document is finished loading
+//
+$(document).ready(toggleDisplay);
+
+
+</script>
+
+ </head>
+
+<body>
+
+<h1>Animation</h1>
+
+<a id="toggler1" href="#">
+     Toggle 
+</a>
+
+<!--important thing to remember is position is absolute  -->
+<div id="msgContainer" style="
+background:red;color:#fff;width: 200px;
+position:absolute;">
+<h2>Welcome to deloitte</h2>
+</div>
+</body>
+
+
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+

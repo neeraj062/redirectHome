@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function displayMessage(){
+var user1={id:1 , name:"scooby", age:3 };
+var user2={id:2, name:"fluffy", age:1 };
+var element=document.getElementById('t1'); // fetching the element 
+//window.alert("Changed Successfully");// using for alert dialog
+var details1=user1.id +","+ user1.name+","+user1.age;
+var details2=user2.id+","+user2.name+","+user2.age;
+var desiredInner=details1+"<br>"+details2;
+element.innerHTML = desiredInner;
+}
+</script>
+ </head>
+<body>
+
+<h1>Playing with Objects</h1>
+
+<a href="#" onclick=displayMessage()>
+Display Message
+</a>
+
+<div id="t1" style="margin:50px"></div>
+
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+ function greet(nameId,displayId){
+  var inputElement=document.getElementById(nameId); 
+  console.log("input element="+inputElement.id);
+   var inputValue=  inputElement.value;
+   var greetElement=document.getElementById(displayId);
+   greetElement.innerHTML="hello "+inputValue;
+
+ }
+</script>
+ </head>
+<body>
+
+<h1>Javascript responding to html input events</h1>
+
+<form id="form1">
+  <!--experiment with onchange,onkeyup-->
+  <input id="name1" type="text" onchange="greet('name1','greetComponent')"/> 
+</form>
+
+<div id="greetComponent" style="margin:50px;">
+
+</div>
+
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+

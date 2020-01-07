@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src="jquery-3.4.1.js" type="text/javascript"> </script>
+
+<script type="text/javascript">
+
+
+function toggleDisplay(){
+//
+// defining the function to be executed on click event
+//
+//in javascript functions can be passed as argument 
+//
+ $("#toggler1").click(function(){
+     console.log("inside toggle");
+     //
+     // other methods that can be experiemented are hide(),show()
+     //
+    $("#msgContainer").toggle(); 
+
+ });   
+
+};
+
+//
+// execute our function when dom is ready ,ie. run after document is finished loading
+//
+$(document).ready(toggleDisplay);
+</script>
+
+ </head>
+
+<body>
+
+<h1>Toggle the element</h1>
+
+<a id="toggler1" href="#" >
+     Toggle 
+</a>
+
+<div id="msgContainer" style="margin:50px">
+<h3>Welcome to deloitte</h3>
+</div>
+</body>
+
+
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

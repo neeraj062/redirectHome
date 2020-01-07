@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src="https://code.jquery.com/jquery-3.4.1.js" type="text/javascript"> </script>
+
+<script type="text/javascript">
+
+
+function displayMessage(){
+var desiredInner='<h3>Hello World</h3>'; // var is used for declaring
+$('#t1').html(desiredInner);
+console.log("changed the content successfully");// writing to the browser's console(used for debugging)
+
+}
+
+</script>
+
+ </head>
+
+<body>
+
+<h1>Display Message</h1>
+
+<a href="#"
+onclick=displayMessage()>
+Display Message
+</a>
+
+<div id="t1" style="margin:50px"></div>
+
+</body>
+
+
+</html> 
+
+

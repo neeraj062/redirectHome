@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<script type="text/javascript">
+
+
+function displayMessage(){
+var user1={
+    id:1 ,
+     name:"scooby",
+      age:3,
+      userDetails : function(){
+          //
+          // this represents current object like java , 
+          // unlike java without this object's members can'tbe accessed 
+          //
+       var detailsText=this.id +","+ this.name+","+this.age;
+        return detailsText;
+      }      
+       };
+
+var user2={
+    id:2,
+     name:"fluffy",
+      age:1 ,
+
+      userDetails : function(){
+       var detailsText= this.id +","+ this.name+","+this.age;
+        return detailsText;
+      }      
+      
+       };
+
+var element=document.getElementById('t1'); // fetching the element 
+//window.alert("Changed Successfully");// using for alert dialog
+var details1=user1.userDetails();
+var details2=user2.userDetails();
+var desiredInner=details1+"<br>"+details2;
+element.innerHTML = desiredInner;
+
+}
+
+
+
+</script>
+
+ </head>
+
+<body>
+
+<h1>Objects can have methods too</h1>
+
+<a href="#"
+onclick=displayMessage()>
+Display Message
+</a>
+
+<div id="t1" style="margin:50px"></div>
+
+</body>
+</html> 
+
+
+
+
+
+
+
+

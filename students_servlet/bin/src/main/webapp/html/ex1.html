@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+
+function displayMessage(){
+var desiredInner='<h3>Hello World</h3>'; // var is used for declaring
+var element=document.getElementById('t1'); // fetching the element 
+//window.alert("Changed Successfully");// using for alert dialog
+element.innerHTML = desiredInner;
+console.log("changed the content successfully");// writing to the browser's console(used for debugging)
+}
+</script>
+ </head>
+<body>
+
+<h1>Display Message</h1>
+
+<a href="#" onclick=displayMessage()>
+Display Message
+</a>
+<div id="t1" style="margin:50px"></div>
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
