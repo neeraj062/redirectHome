@@ -1,20 +1,14 @@
 package com.deloitte.ecommerce.dao;
 
-import java.util.*;
-import org.cap.entities.Employee;
+
+import com.deloitte.ecommerce.entities.CustomerWallet;
 
 
 public interface ICustomerWalletDao {
 	
-	Map<Integer,Empolyee> store = new HashMap<>();
 	
-	public void  findById(int id) {
-		Empoloyee e = store.get(id);
-		if(id<0) {
-			throw IncorrectIdException("Id is not correct !!!");
-		}
-		
-	}
+	CustomerWallet  findByMobileNo(String id);
+	
 	boolean credentialsCorrect(String mobileno, String password);
 
 }

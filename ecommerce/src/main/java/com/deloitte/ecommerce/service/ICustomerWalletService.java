@@ -7,9 +7,9 @@ import com.deloitte.ecommerce.exceptions.IncorrectMobileNoException;
 
 public interface ICustomerWalletService {
 	
-	boolean credentialsCorrect(int id, String name);
+	boolean credentialsCorrect(String mobileno, String name);
 	
-	Employee findById(int no) throws IncorrectMobileNoException;
+	CustomerWallet  findByMobileNo(String no) throws IncorrectMobileNoException;
 	
 
 }
